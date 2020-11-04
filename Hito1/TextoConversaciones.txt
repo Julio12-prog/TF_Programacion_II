@@ -1,0 +1,26 @@
+Corrupto: Estamos perdiendo! Vengan los asesinos
+Asesino: Esta bien, te ayudaremos pero queremos una recompensa
+Corrupto: Si ganamos, les daremos parte del reino
+Asesino: Me parece justo los ayudaremos
+Corrupto: Contamos con ustedes
+
+
+Corrupto: Hey tu! necesito tu ayuda.
+Asesino: Que pasa?
+Corrupto: Te pagaré muy bien si me ayudas a derrotar al rey
+Asesino: Mi tarifa es alta...
+Corrupto: Si ganamos les daremos los tesoros del reino
+Asesino: Esta bien, acepto.
+
+
+Corrupto: Necesito refuerzos
+Asesino: Ah ya mano, tienes que darme algo a cambio.
+Corrupto: Ayudame, y te doy a Benggie.
+Asesino: Llego de cabeza
+
+
+Corrupto: Cof cof 
+Asesino: Y la mascarilla?
+Corrupto: Yo no creo en ese virus
+Asesino: Anda a tu casa y cuidate
+Corrupto: Esta bien

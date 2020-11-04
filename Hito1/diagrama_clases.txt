@@ -1,0 +1,37 @@
+[CEntidad|#x:short;#y:short;#dx:short;#dy:short;#ancho:short;#alto:short;#img:Bitmap;#area:Rectangle;#RutaFoto:String|+CEntidad();+~CEntidad();+Getx():short;+Gety():short;+Getdx():short;+Getdy():short;+Getancho():short;+Getalto():short;+Setx(short value):void;+RutaFoto():void;+Sety(short value):void;+Setdx(short value):void;+Setdy(short value):void;+Setancho(short value):void;+Setalto(short value):void;+Mostrar(Graphics g):void;+Mover(Graphics g):void;+Colision():bool]
+
+
+[CAliado||+Mostrar(Graphics g):void;+Mover(Graphics g):void;+Colision(CEntidad P):bool] 
+
+[CArregloAliados|-vector Arr|+Agregar():void;+Eliminar():void;+Get():void]
+
+[CCorrupto|-tipo:short|+Mostrar(Graphics g):void;+Mover(Graphics g):void;+Colision(CEntidad P):bool]
+
+[CArregloCorruptos|-vector Arr|+Agregar():void;+Eliminar():void;+Get():void]
+
+[CGobernante|-vida:short|+Mostrar(Graphics g):void;+Mover(Graphics g):void;+Colision(CEntidad P):bool;+GetVida():void]
+
+[CJuego|-ArregloAliados* aliados;-CArregloCorruptos* corruptos;-CGobernante* gobernante]
+
+[CEscenario|-Matriz:short;img:Bitmap|+PosicionValida():bool;]
+
+[CPortal||+Colision():bool;+Teletransportar(bool Colision
+CGobernante* G):void]
+
+[Menu|-cantidadVidas:short;-numAliados:short;-tiempoDuracion:short|+empezarJuego():void;+instrucciones():void]
+
+
+
+[Menu]1++->1[CJuego]
+[CEntidad]1->1[CEscenario]
+[CJuego]1->1[CEscenario]
+[CJuego]1+->1[CGobernante]
+[CJuego]1+->1*[CArregloAliados]
+[CJuego]1+->1*[CArregloCorruptos]
+[CArregloAliados]n*++-1>[CAliado]
+[CArregloCorruptos]n*++-1>[CCorrupto]
+[CGobernante]->[CPortal]
+[CEntidad]^-[CPortal]
+[CEntidad]^-[CAliado]
+[CEntidad]^-[CCorrupto]
+[CEntidad]^-[CGobernante]
